@@ -4,7 +4,7 @@ public class Player {
 	private Integer weight;
 	private String name;
 	private Integer jersieno;
-	private Integer shoeno;
+	private Integer shoeNo;
 	private String team;
 	
 	
@@ -28,6 +28,25 @@ public class Player {
 		System.out.println("Player saves a goal");
 	}
 	
+	public Player()
+	{
+		name = "";
+		weight = 0;
+		shoeNo = 0;
+		jersieno = 0;
+		team = "";
+			
+	}
+	
+	
+	public Player(Integer weight, String name, Integer jersieno, Integer shoeNo, String team) {
+		this.weight = weight;
+		this.name = name;
+		this.jersieno = jersieno;
+		this.shoeNo = shoeNo;
+		this.team = team;
+	}
+
 	public Integer getWeight() {
 		return weight;
 	}
@@ -52,12 +71,12 @@ public class Player {
 		this.jersieno = jersieno;
 	}
 	
-	public Integer getShoeno() {
-		return shoeno;
+	public Integer getShoeNo() {
+		return shoeNo;
 	}
 	
-	public void setShoeno(Integer shoeno) {
-		this.shoeno = shoeno;
+	public void setShoeNo(Integer shoeNo) {
+		this.shoeNo = shoeNo;
 	}
 	
 	public String getTeam() {
